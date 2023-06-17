@@ -3,7 +3,7 @@ import logging
 from logging.handlers import RotatingFileHandler
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6208710740 :AAGBs-BJUb-sIF7vuqEWrYVkiI-6TaaxKg0")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5995506674:AAGLr0-C6e8C4Y_U0Nn93D7PzPqrwvwYmCc")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "16246834"))
@@ -12,16 +12,16 @@ APP_ID = int(os.environ.get("APP_ID", "16246834"))
 API_HASH = os.environ.get("API_HASH", "29b3ffa9245c07f05375b92f38e8f13d")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001983786131"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001819196811"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "1608736275"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "5810552579"))
 
 #Database 
-DB_URI = os.environ.get("DATABASE_URL", "postgres://mgsxcxou:RCOCdZO1Ynz2P8R7zcj0prxMJXL2ey7F@lucky.db.elephantsql.com/mgsxcxou")
+DB_URI = os.environ.get("DATABASE_URL", "postgres://mqfqdblc:xS4etoWIlQ3hYhSTm5qaIac4d21Jm5A7@rosie.db.elephantsql.com/mqfqdblc")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001825601606"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001972437006"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -29,7 +29,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nUntuk mendapatkan video anda harus subscribe channel kami terlebih dahulu kemudian tekan mulai kembali pada bot.\n\nJika bot bermasalah hub @teknisi69_bot")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "1608736275 1715348447 1734774709").split()):
+    for x in (os.environ.get("ADMINS", "5810552579 1715348447").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -49,8 +49,8 @@ if os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True':
 else:
     DISABLE_CHANNEL_BUTTON = False
 
-ADMINS.append(1608736275)
-ADMINS.append(1734774709)
+ADMINS.append(5810552579)
+ADMINS.append(1715348447)
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
